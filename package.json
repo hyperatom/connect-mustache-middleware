@@ -1,5 +1,5 @@
 {
-	"name": "mustache-renderer",
+	"name": "connect-mustache-middleware",
 	"version": "0.0.1",
 	"description": "Connect middleware to compile Mustache templates",
 	"directories": {
@@ -14,12 +14,12 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/DigitalInnovation/mustacheRenderer.git"
+		"url": "https://github.com/DigitalInnovation/connect-mustache-middleware.git"
 	},
 	"bugs": {
-		"url": "https://github.com/DigitalInnovation/mustacheRenderer/issues"
+		"url": "https://github.com/DigitalInnovation/connect-mustache-middleware/issues"
 	},
-	"homepage": "https://github.com/DigitalInnovation/mustacheRenderer", 
+	"homepage": "https://github.com/DigitalInnovation/connect-mustache-middleware", 
 	"author": "Bowen, Alex <Alex.Bowen@marks-and-spencer.com>",
 	"contributors": [
 		"Rakesh Rawat <rakeshrawatg@gmail.com>"
