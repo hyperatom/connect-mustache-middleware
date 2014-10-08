@@ -5,7 +5,7 @@ Connect middleware to compile requested html file as a mustache template before 
 ## Example
 
 ```js
-var mustacheEngine = require('./lib/mustache-engine/mustacheEngine.js');
+var mustacheEngine = require('connect-mustache-middleware');
 
 connect().use(mustacheEngine.middleware({
 	rootDir: '.tmp', // path to look mustache templates
@@ -15,9 +15,8 @@ connect().use(mustacheEngine.middleware({
 ```
 
 ## Installation
-Currently its not a published node module so we need to include it using require() call.
 
-var mustacheEngine = require('./lib/mustache-engine/mustacheEngine.js');
+npm install connect-mustache-middleware
 
 
 ## Features
