@@ -16,7 +16,7 @@ connect().use(mustacheEngine.middleware({
 
 ## Installation
 
-npm install connect-mustache-middleware
+```npm install connect-mustache-middleware```
 
 
 ## Features
