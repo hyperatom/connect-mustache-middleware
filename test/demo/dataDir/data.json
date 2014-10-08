@@ -1,0 +1,9 @@
+{
+	"data": {
+		"indexData": "INDEX PAGE DATA",
+		"headerData": "HEADER SECTION DATA",
+		"footerData": "FOOTER SECTION DATA",
+		"contentData": "CONTENT SECTION DATA",
+	    "nestedData": "NESTED SECTION DATA"
+	}
+}
