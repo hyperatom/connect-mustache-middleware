@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.4.23
+3 info using node@v0.10.31
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/alex/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/alex/.npm/connect-mustache-middleware/0.0.1/package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /Users/alex/.npm/connect-mustache-middleware/0.0.1/package.tgz
+12 verbose folder .
+13 info prepublish connect-mustache-middleware@0.0.1
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/alex/.npm/1f1177db-tar.lock
+16 silly lockFile c492baea-che-middleware-0-0-1-package-tgz tar:///Users/alex/.npm/connect-mustache-middleware/0.0.1/package.tgz
+17 verbose lock tar:///Users/alex/.npm/connect-mustache-middleware/0.0.1/package.tgz /Users/alex/.npm/c492baea-che-middleware-0-0-1-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile c492baea-che-middleware-0-0-1-package-tgz tar:///Users/alex/.npm/connect-mustache-middleware/0.0.1/package.tgz
+21 silly lockFile c492baea-che-middleware-0-0-1-package-tgz tar:///Users/alex/.npm/connect-mustache-middleware/0.0.1/package.tgz
+22 silly lockFile 4c31295c-ustache-middleware-0-0-1-package /Users/alex/.npm/connect-mustache-middleware/0.0.1/package
+23 verbose lock /Users/alex/.npm/connect-mustache-middleware/0.0.1/package /Users/alex/.npm/4c31295c-ustache-middleware-0-0-1-package.lock
+24 silly lockFile 4c31295c-ustache-middleware-0-0-1-package /Users/alex/.npm/connect-mustache-middleware/0.0.1/package
+25 silly lockFile 4c31295c-ustache-middleware-0-0-1-package /Users/alex/.npm/connect-mustache-middleware/0.0.1/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'connect-mustache-middleware',
+28 silly publish   version: '0.0.1',
+28 silly publish   description: 'Connect middleware to compile Mustache templates',
+28 silly publish   directories: { test: 'test' },
+28 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+28 silly publish   keywords: [ 'connect', 'mustache' ],
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'https://github.com/DigitalInnovation/connect-mustache-middleware.git' },
+28 silly publish   bugs: { url: 'https://github.com/DigitalInnovation/connect-mustache-middleware/issues' },
+28 silly publish   homepage: 'https://github.com/DigitalInnovation/connect-mustache-middleware',
+28 silly publish   author:
+28 silly publish    { name: 'Bowen, Alex',
+28 silly publish      email: 'Alex.Bowen@marks-and-spencer.com' },
+28 silly publish   contributors: [ { name: 'Rakesh Rawat', email: 'rakeshrawatg@gmail.com' } ],
+28 silly publish   license: 'ISC',
+28 silly publish   dependencies: { mustache: '^0.8.2', 'stream-buffers': '^1.0.0' },
+28 silly publish   readme: '# mustache-engine\n\nConnect middleware to compile requested html file as a mustache template before serving the response. Also allow mustache partials to be included using file system.\n\n## Example\n\n```js\nvar mustacheEngine = require(\'./lib/mustache-engine/mustacheEngine.js\');\n\nconnect().use(mustacheEngine.middleware({\n\trootDir: \'.tmp\', // path to look mustache templates\n\tdataDir: \'mock/data\' // path to look for JSON data files\n}))\n\n```\n\n## Installation\nCurrently its not a published node module so we need to include it using require() call.\n\nvar mustacheEngine = require(\'./lib/mustache-engine/mustacheEngine.js\');\n\n\n## Features\n- Works as connect middleware and compile requested HTML file as mustache template.\n- Allow mustache partials to be included using file system.',
+28 silly publish   readmeFilename: 'Readme.md',
+28 silly publish   gitHead: '6a6c14ab830dcc9494516c3c9d4106baeb50125a',
+28 silly publish   _id: 'connect-mustache-middleware@0.0.1',
+28 silly publish   _shasum: '1d4399882d06d4637ddb666a880105ec8c2517b8',
+28 silly publish   _from: '.' }
+29 verbose request where is /connect-mustache-middleware
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 6762d27ca3a666d7
+32 verbose url raw /connect-mustache-middleware
+33 verbose url resolving [ 'https://registry.npmjs.org/',
+33 verbose url resolving   './connect-mustache-middleware' ]
+34 verbose url resolved https://registry.npmjs.org/connect-mustache-middleware
+35 verbose request where is https://registry.npmjs.org/connect-mustache-middleware
+36 info trying registry request attempt 1 at 17:37:26
+37 http PUT https://registry.npmjs.org/connect-mustache-middleware
+38 http 403 https://registry.npmjs.org/connect-mustache-middleware
+39 verbose headers { date: 'Wed, 08 Oct 2014 16:37:28 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '3838',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-lcy1126-LCY',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1412786247.916853,VS0,VE621',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden cannot modify pre-existing version: 0.0.1
+41 error old={"name":"connect-mustache-middleware","version":"0.0.1","description":"Connect middleware to compile Mustache templates","directories":{"test":"test"},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":["connect","mustache"],"repository":{"type":"git","url":"https://github.com/DigitalInnovation/connect-mustache-middleware.git"},"bugs":{"url":"https://github.com/DigitalInnovation/connect-mustache-middleware/issues"},"homepage":"https://github.com/DigitalInnovation/connect-mustache-middleware","author":{"name":"Bowen, Alex","email":"Alex.Bowen@marks-and-spencer.com"},"contributors":[{"name":"Rakesh Rawat","email":"rakeshrawatg@gmail.com"}],"license":"ISC","dependencies":{"mustache":"^0.8.2","stream-buffers":"^1.0.0"},"gitHead":"14a8960b90fbc158a3a7c21607560eff0c8011e2","_id":"connect-mustache-middleware@0.0.1","_shasum":"2db69dad3722a9445a87bf7a1926543e833a540b","_from":".","_npmVersion":"1.4.23","_npmUser":{"name":"alex.bowen","email":"alexbowen123@googlemail.com"},"maintainers":[{"name":"alex.bowen","email":"alexbowen123@googlemail.com"}],"dist":{"shasum":"2db69dad3722a9445a87bf7a1926543e833a540b","tarball":"http://registry.npmjs.org/connect-mustache-middleware/-/connect-mustache-middleware-0.0.1.tgz"}}
+41 error new={"name":"connect-mustache-middleware","version":"0.0.1","description":"Connect middleware to compile Mustache templates","directories":{"test":"test"},"scripts":{"test":"echo \"Error: no test specified\" && exit 1"},"keywords":["connect","mustache"],"repository":{"type":"git","url":"https://github.com/DigitalInnovation/connect-mustache-middleware.git"},"bugs":{"url":"https://github.com/DigitalInnovation/connect-mustache-middleware/issues"},"homepage":"https://github.com/DigitalInnovation/connect-mustache-middleware","author":{"name":"Bowen, Alex","email":"Alex.Bowen@marks-and-spencer.com"},"contributors":[{"name":"Rakesh Rawat","email":"rakeshrawatg@gmail.com"}],"license":"ISC","dependencies":{"mustache":"^0.8.2","stream-buffers":"^1.0.0"},"readme":"# mustache-engine\u000a\u000aConnect middleware to compile requested html file as a mustache template before serving the response. Also allow mustache partials to be included using file system.\u000a\u000a## Example\u000a\u000a```js\u000avar mustacheEngine = require('./lib/mustache-engine/mustacheEngine.js');\u000a\u000aconnect().use(mustacheEngine.middleware({\u000a\u0009rootDir: '.tmp', // path to look mustache templates\u000a\u0009dataDir: 'mock/data' // path to look for JSON data files\u000a}))\u000a\u000a```\u000a\u000a## Installation\u000aCurrently its not a published node module so we need to include it using require() call.\u000a\u000avar mustacheEngine = require('./lib/mustache-engine/mustacheEngine.js');\u000a\u000a\u000a## Features\u000a- Works as connect middleware and compile requested HTML file as mustache template.\u000a- Allow mustache partials to be included using file system.","readmeFilename":"Readme.md","gitHead":"6a6c14ab830dcc9494516c3c9d4106baeb50125a","_id":"connect-mustache-middleware@0.0.1","_shasum":"1d4399882d06d4637ddb666a880105ec8c2517b8","_from":".","_npmVersion":"1.4.23","_npmUser":{"name":"alex.bowen","email":"alexbowen123@googlemail.com"},"maintainers":[{"name":"alex.bowen","email":"alexbowen123@googlemail.com"}],"dist":{"shasum":"1d4399882d06d4637ddb666a880105ec8c2517b8","tarball":"http://registry.npmjs.org/connect-mustache-middleware/-/connect-mustache-middleware-0.0.1.tgz"}}: connect-mustache-middleware
+41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:300:14)
+41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:238:65)
+41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:123:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:893:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:844:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 13.3.0
+44 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error cwd /Users/alex/Sites/Web/connect-mustache-middleware
+46 error node -v v0.10.31
+47 error npm -v 1.4.23
+48 verbose exit [ 1, true ]
