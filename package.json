@@ -21,9 +21,10 @@
 	},
 	"homepage": "https://github.com/DigitalInnovation/connect-mustache-middleware", 
 	"author": "Bowen, Alex <Alex.Bowen@marks-and-spencer.com>",
-	"contributors": [
-		"Rakesh Rawat <rakeshrawatg@gmail.com>"
-	],
+	"contributors": [{
+		"name": "Rakesh Rawat",
+		"email": "rakeshrawatg@gmail.com"
+	}],
 	"license": "ISC",
 	"dependencies": {
 		"mustache": "^0.8.2",
