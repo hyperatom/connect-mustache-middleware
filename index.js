@@ -145,14 +145,18 @@ var MustacheEngine = {
                 body = buffer.getContentsAsString();
                 var partials = MustacheEngine.includePartials(body);
                 var jsonData = MustacheEngine.getCompileWithFileContent(partials);
+				var compiledHtml = '';
 
-                if (jsonData) {
-                    // parse mustache template 
-                    oldEnd.call(this, Mustache.render(partials, jsonData));
-                } else {
-                    // parse mustache template 
-                    oldEnd.call(this, partials);
-                }
+				if (jsonData) {
+					// parse mustache template 
+					compiledHtml = Mustache.render(partials, jsonData);
+				} else {
+					// parse mustache template
+					compiledHtml = partials;
+				}
+
+				res.setHeader('Content-Length', compiledHtml.length)
+				oldEnd.call(this, compiledHtml);
             }
 
             // call next middleware

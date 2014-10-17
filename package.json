@@ -1,6 +1,6 @@
 {
 	"name": "connect-mustache-middleware",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Connect middleware to compile Mustache templates",
 	"directories": {
 		"test": "test"
